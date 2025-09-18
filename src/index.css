@@ -1,0 +1,17 @@
+@import "tailwindcss";
+
+:root {
+  font-family: "Space Grotesk", sans-serif;
+}
+
+.font-grotesk {
+  font-family: "Space Grotesk", sans-serif;
+}
+
+.font-jetbrains {
+  font-family: "JetBrains Mono", monospace;
+}
+
+body {
+  cursor: none; /* hides default cursor */
+}
