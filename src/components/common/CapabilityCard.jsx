@@ -19,9 +19,6 @@ const CapabilityCard = ({ icon, color, title, desc }) => {
 
       {/* Description */}
       <p className="text-gray-400 text-sm">{desc}</p>
-
-      {/* Glow effect */}
-      <div className="absolute inset-0 rounded-xl border-2 border-transparent group-hover:border-green-400 transition duration-500"></div>
     </motion.div>
   );
 };

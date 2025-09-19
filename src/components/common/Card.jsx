@@ -19,8 +19,6 @@ export default function Card({ tag, id, color, title, desc, status }) {
                p-6 rounded-xl border border-gray-700 
                overflow-hidden cursor-pointer"
   >
-    {/* Animated border sweep (optional) */}
-    <span className="absolute top-0 left-0 w-0 h-[2px] bg-green-400 group-hover:w-full transition-all duration-500"></span>
   
     {/* Shiny Swipe Effect */}
     <motion.div
@@ -54,9 +52,6 @@ export default function Card({ tag, id, color, title, desc, status }) {
         <p className="text-green-400 font-jetbrains text-sm">{status}</p>
       )}
     </div>
-  
-    {/* Glow outline */}
-    <div className="absolute inset-0 rounded-xl border-2 border-transparent group-hover:border-green-400 transition duration-500"></div>
   </motion.div>
   
   );
