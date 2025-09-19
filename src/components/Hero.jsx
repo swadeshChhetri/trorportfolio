@@ -94,7 +94,7 @@ import { motion } from "framer-motion";
 import Button from "./common/Button";
 export default function Hero() {
   return (
-    <section className="relative min-h-screen flex flex-col md:flex-row items-center justify-between bg-gradient-to-r from-black to-gray-900 text-white md:px-8 overflow-hidden">
+    <section id="home" className="relative min-h-screen flex flex-col md:flex-row items-center justify-between bg-gradient-to-r from-black to-gray-900 text-white md:px-8 overflow-hidden">
       {/* Text Section */}
       <motion.div
         className="z-10 text-center md:text-left space-y-6"

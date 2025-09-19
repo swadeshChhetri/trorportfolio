@@ -21,7 +21,7 @@ export default function Navbar() {
             duration={500}
             spy={true}
             offset={-70}
-            className="cursor-pointer transition-colors duration-300 hover:text-white"
+            className="cursor-pointer text-sm transition-colors duration-300 hover:text-white"
           >
             [{item.toUpperCase()}]
           </Link>
