@@ -1,5 +1,5 @@
 import Navbar from "./components/Navbar";
-import Hero from "./components/Hero";
+import HeroComplex from "./components/Hero";
 import Services from "./components/Services";
 import Products from "./components/Products";
 import { CardsSection } from "./components/Cases";
@@ -19,7 +19,7 @@ function App() {
     <div className="font-grotesk bg-black min-h-screen text-white">
       <div className="px-6 md:px-8">
         <Navbar />
-        <Hero />
+        <HeroComplex />
         <Services />
         <Products />
         <Agents />
