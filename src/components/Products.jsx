@@ -45,12 +45,12 @@ export default function Products() {
           {/* Orbital Animation */}
           <div className="relative flex items-center justify-center flex-1 w-full">
             {/* Center AI circle */}
-            <div className="w-20 h-20 bg-gradient-to-r from-blue-500 to-green-500 rounded-full flex items-center justify-center font-bold">
+            <div className="w-20 h-20 bg-gradient-to-r from-blue-500 to-green-500 rounded-full flex items-center justify-center font-bold opacity-100 ">
               AI
             </div>
 
             {/* 4 medium balls - clockwise */}
-            <div className="absolute w-48 h-48 border border-gray-600 rounded-full animate-[spin_12s_linear_infinite]">
+            <div className="absolute w-48 h-48 border border-gray-600 rounded-full animate-[spin_12s_linear_infinite] opacity-80">
               <span className="absolute w-6 h-6 bg-green-400 rounded-full -top-3 left-1/2 -translate-x-1/2"></span>
               <span className="absolute w-6 h-6 bg-yellow-400 rounded-full top-1/2 -right-3 -translate-y-1/2"></span>
               <span className="absolute w-6 h-6 bg-blue-400 rounded-full -bottom-3 left-1/2 -translate-x-1/2"></span>
@@ -58,7 +58,7 @@ export default function Products() {
             </div>
 
             {/* 6 small balls - anti-clockwise */}
-            <div className="absolute w-72 h-72 border border-gray-700 rounded-full animate-[spin_20s_linear_infinite_reverse]">
+            <div className="absolute w-72 h-72 border border-gray-700 rounded-full animate-[spin_20s_linear_infinite_reverse] opacity-50">
               <span className="absolute w-3 h-3 bg-red-400 rounded-full -top-1 left-1/3"></span>
               <span className="absolute w-3 h-3 bg-blue-300 rounded-full top-1/4 -right-1"></span>
               <span className="absolute w-3 h-3 bg-yellow-300 rounded-full bottom-1/4 -right-1"></span>
