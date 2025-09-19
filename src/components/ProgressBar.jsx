@@ -1,6 +1,11 @@
 import React from "react";
 import { motion } from "framer-motion";
 
+const shineVariants = {
+  initial: { x: "-200%" },
+  hover: { x: "200%" },
+};
+
 const ProgressBar = ({ label, percentage, color }) => (
   <div className="flex items-center justify-between w-full mb-6">
     {/* Label */}
@@ -20,14 +25,13 @@ const ProgressBar = ({ label, percentage, color }) => (
     <span
       className="text-sm font-bold"
       style={{
-        color:
-          color.includes("green")
-            ? "#22c55e"
-            : color.includes("yellow")
-            ? "#facc15"
-            : color.includes("purple")
-            ? "#a855f7"
-            : "#38bdf8",
+        color: color.includes("green")
+          ? "#22c55e"
+          : color.includes("yellow")
+          ? "#facc15"
+          : color.includes("purple")
+          ? "#a855f7"
+          : "#38bdf8",
       }}
     >
       {percentage}%
@@ -44,7 +48,22 @@ export function ProjectTimeline() {
   ];
 
   return (
-    <div className="bg-[#0c0f16] text-white rounded-xl p-6 shadow-lg w-full border border-gray-700 mx-auto">
+    <motion.div
+      initial="initial"
+      whileHover="hover"
+      variants={{ initial: { y: 0 }, hover: { y: -10 } }}
+      transition={{ type: "spring", stiffness: 200, damping: 15 }}
+      className="relative overflow-hidden bg-[#0c0f16] text-white rounded-xl p-6 shadow-lg w-full border border-gray-700 mx-auto"
+    >
+       {/* Shiny Swipe Effect */}
+       <motion.div
+        variants={shineVariants}
+        transition={{ duration: 0.8, ease: "easeInOut" }}
+        className="absolute inset-0 w-[150%] h-full pointer-events-none z-0 
+                   bg-gradient-to-r from-transparent via-green-400/40 to-transparent"
+        aria-hidden="true"
+      />
+
       <p className="text-xs text-green-400 tracking-wider mb-6">
         [TYPICAL_PROJECT_TIMELINE]
       </p>
@@ -57,7 +76,7 @@ export function ProjectTimeline() {
           color={item.color}
         />
       ))}
-    </div>
+    </motion.div>
   );
 }
 

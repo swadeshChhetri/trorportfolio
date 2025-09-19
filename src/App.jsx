@@ -13,11 +13,14 @@ import ProjectTimeline from "./components/ProgressBar";
 import Capabilities from "./components/Capabilities";
 import Agents from "./components/Agents";
 import CoreCapabilities from "./components/CoreCapabilities";
+import ParticleBackground from "./components/common/ParticleBackground";
 
 function App() {
   return (
-    <div className="font-grotesk bg-black min-h-screen text-white">
-      <div className="px-6 md:px-8">
+    <div className="font-grotesk min-h-screen text-white  relative">
+      <h1>HI</h1>
+      <ParticleBackground/>
+      <div className="relative z-10 px-6 md:px-8">
         <Navbar />
         <HeroComplex />
         <Services />

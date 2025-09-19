@@ -1,5 +1,6 @@
 import React from "react";
 import StepCard from "./common/StepCard";
+import { motion } from "framer-motion";
 
 const steps = [
   {

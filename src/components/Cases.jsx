@@ -1,5 +1,5 @@
 import React from "react";
-import ProjectCard from "./common/ProjectCard";
+import UniversalCard from "./common/Card";
 
 
 const projectCardsData = [
@@ -32,9 +32,9 @@ const projectCardsData = [
 
 export function CardsSection() {
   return (
-    <div className="flex flex-col md:flex-row gap-6 justify-center items-center py-6">
+    <div id="cases" className="flex flex-col md:flex-row gap-6 justify-center items-center py-6">
       {projectCardsData.map((card, index) => (
-        <ProjectCard
+        <UniversalCard
           key={index}
           title={card.title}
           heading={card.heading}
