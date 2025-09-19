@@ -106,7 +106,7 @@ export default function Hero() {
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.2, duration: 0.8 }}
-          className="text-green-400 text-lg mb-4 font-jetbrains"
+          className="text-green-400 text-sm mb-4 font-jetbrains"
         >
           INITIALIZING AI CONSCIOUSNESS
           <motion.span
