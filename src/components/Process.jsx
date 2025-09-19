@@ -38,7 +38,7 @@ const steps = [
 
 const StepsSection = () => {
   return (
-    <div className="flex flex-col md:flex-row gap-8 justify-center items-start py-10 bg-black text-white">
+    <div id="process" className="flex flex-col md:flex-row gap-8 justify-center items-start py-10 bg-black text-white">
       {steps.map((step) => (
         <StepCard
           key={step.number}
