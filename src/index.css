@@ -11,7 +11,3 @@
 .font-jetbrains {
   font-family: "JetBrains Mono", monospace;
 }
-
-body {
-  cursor: none; /* hides default cursor */
-}

@@ -17,7 +17,6 @@ import CoreCapabilities from "./components/CoreCapabilities";
 function App() {
   return (
     <div className="font-grotesk bg-black min-h-screen text-white">
-      <Cursor />
       <div className="px-6 md:px-8">
         <Navbar />
         <Hero />
