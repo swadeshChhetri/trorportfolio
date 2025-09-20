@@ -16,7 +16,7 @@ import CoreCapabilities from "./components/CoreCapabilities";
 function App() {
   return (
     <div className="font-grotesk bg-black min-h-screen text-white">
-      <div className="w-full px-6 py-24 md:px-8 md:py-4 space-y-24">
+      <div className="w-full px-6 py-24 md:px-8 md:py-4 space-y-34">
         <Navbar />
         <HeroComplex />
         <Services />
