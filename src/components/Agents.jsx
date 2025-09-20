@@ -1,5 +1,5 @@
-import React from 'react'
-import Card from './common/Card';
+import React from "react";
+import Card from "./common/Card";
 
 const agents = [
   {
@@ -46,24 +46,23 @@ const agents = [
   },
 ];
 
-
 const Agents = () => {
   return (
     <section className="bg-black">
-    <div className="mx-auto grid md:grid-cols-3 gap-8">
-      {agents.map((agent, index) => (
-        <Card
-          key={index}
-          id={agent.id}
-          color={agent.color}
-          title={agent.title}
-          desc={agent.desc}
-          status={agent.status}
-        />
-      ))}
-    </div>
-  </section>
-  )
-}
+      <div className="mx-auto grid md:grid-cols-3 gap-8">
+        {agents.map((agent, index) => (
+          <Card
+            key={index}
+            id={agent.id}
+            color={agent.color}
+            title={agent.title}
+            desc={agent.desc}
+            status={agent.status}
+          />
+        ))}
+      </div>
+    </section>
+  );
+};
 
-export default Agents
+export default Agents;

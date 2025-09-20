@@ -19,7 +19,9 @@ export default function Cursor() {
     window.addEventListener("mousemove", move);
 
     // Optional: detect hover on interactive elements
-    const hoverTargets = document.querySelectorAll("a, button, input, textarea");
+    const hoverTargets = document.querySelectorAll(
+      "a, button, input, textarea"
+    );
     hoverTargets.forEach((el) => {
       el.addEventListener("mouseenter", () => setHovered(true));
       el.addEventListener("mouseleave", () => setHovered(false));

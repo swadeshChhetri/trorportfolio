@@ -55,8 +55,8 @@ export function ProjectTimeline() {
       transition={{ type: "spring", stiffness: 200, damping: 15 }}
       className="relative overflow-hidden bg-[#0c0f16] text-white rounded-xl p-6 shadow-lg w-full border border-gray-700 mx-auto"
     >
-       {/* Shiny Swipe Effect */}
-       <motion.div
+      {/* Shiny Swipe Effect */}
+      <motion.div
         variants={shineVariants}
         transition={{ duration: 0.8, ease: "easeInOut" }}
         className="absolute inset-0 w-[150%] h-full pointer-events-none z-0 

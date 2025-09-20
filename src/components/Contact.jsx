@@ -4,7 +4,7 @@ import Motion from "./common/Motion";
 
 export default function ContactForm() {
   return (
-    <section id="services" className="bg-black text-white flex flex-col">
+    <section id="contact" className="bg-black text-white flex flex-col">
       <div className="text-center">
         {/* Section Heading */}
         <h3 className="text-green-400 font-jetbrains mb-2">
@@ -12,11 +12,12 @@ export default function ContactForm() {
         </h3>
         <h2 className="text-4xl font-bold mb-4">Establish Neural Link</h2>
         <p className="text-gray-400 mb-12">
-          Ready to transcend traditional business limitations? Let's architect your digital evolution
+          Ready to transcend traditional business limitations? Let's architect
+          your digital evolution
         </p>
       </div>
       <div
-        id="contact"
+      
         className="min-h-screen bg-black flex items-center justify-center"
       >
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 w-full">

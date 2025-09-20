@@ -33,7 +33,7 @@ export default function Products() {
 
       {/* RIGHT SIDE */}
       <div className="mt-22 md:mt-0 w-full max-w-[500px] mx-auto md:mx-0">
-        <Motion height="min-h-[426px]" >
+        <Motion height="min-h-[426px]">
           <div className="md:mt-0 relative rounded-2xl p-4 md:p-6 flex-1 w-full max-w-full flex flex-col items-center md:items-start md:max-w-[500px] h-full">
             {/* Heading */}
             <p className="text-green-400 font-jetbrains mb-3 text-center md:text-left text-sm md:text-base">

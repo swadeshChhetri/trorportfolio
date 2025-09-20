@@ -1,4 +1,3 @@
-import { motion } from "framer-motion";
 import React from "react";
 import Motion from "./common/Motion";
 
@@ -6,11 +5,6 @@ const stats = [
   { value: "247+", label: "Neural Networks Deployed" },
   { value: "99.7%", label: "System Uptime" },
 ];
-
-const shineVariants = {
-  initial: { x: "-200%" },
-  hover: { x: "200%" },
-};
 
 const protocols = [
   {
@@ -52,10 +46,7 @@ const Capabilities = () => (
         {/* Stats */}
         <div className="grid grid-cols-2 gap-6">
           {stats.map((stat, idx) => (
-            <Motion
-              key={idx}
-              height="h-auto"
-            >
+            <Motion key={idx} height="h-auto">
               <p className="text-3xl font-bold text-green-400">{stat.value}</p>
               <p className="text-gray-400 text-sm mt-2">{stat.label}</p>
             </Motion>

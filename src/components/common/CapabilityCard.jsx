@@ -11,13 +11,10 @@ const CapabilityCard = ({ icon, color, title, desc }) => {
       transition={{ type: "spring", stiffness: 200, damping: 20 }}
       className="relative group bg-gradient-to-b from-gray-900 to-black p-6 rounded-xl border border-gray-700 cursor-pointer"
     >
-      {/* Icon */}
       <div className={`${color} text-3xl font-bold mb-4`}>{icon}</div>
 
-      {/* Title */}
       <h3 className="text-white font-semibold text-lg mb-2">{title}</h3>
 
-      {/* Description */}
       <p className="text-gray-400 text-sm">{desc}</p>
     </motion.div>
   );

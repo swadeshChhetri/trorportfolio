@@ -1,7 +1,6 @@
 import React from "react";
 import CapabilityCard from "./common/CapabilityCard";
 
-
 const capabilities = [
   {
     id: "infinite",

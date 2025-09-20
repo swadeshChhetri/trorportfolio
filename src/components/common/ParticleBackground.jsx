@@ -71,8 +71,8 @@ const ParticleBackground = () => {
               grab: {
                 distance: 150,
                 line_linked: {
-                  opacity: 0.5
-                }
+                  opacity: 0.5,
+                },
               },
               push: {
                 quantity: 4,
@@ -86,9 +86,15 @@ const ParticleBackground = () => {
             },
             color: {
               value: [
-                "#22c55e", "#16a34a", "#15803d", "#166534", 
-                "#14532d", "#059669", "#047857", "#065f46"
-              ]
+                "#22c55e",
+                "#16a34a",
+                "#15803d",
+                "#166534",
+                "#14532d",
+                "#059669",
+                "#047857",
+                "#065f46",
+              ],
             },
             shape: {
               type: ["circle", "edge", "triangle"],
@@ -104,7 +110,7 @@ const ParticleBackground = () => {
                 enable: true,
                 speed: 1.5,
                 sync: false,
-              }
+              },
             },
             size: {
               value: { min: 1, max: 6 },
@@ -112,7 +118,7 @@ const ParticleBackground = () => {
                 enable: true,
                 speed: 3,
                 sync: false,
-              }
+              },
             },
             move: {
               enable: true,
@@ -124,8 +130,8 @@ const ParticleBackground = () => {
               attract: {
                 enable: true,
                 rotateX: 600,
-                rotateY: 1200
-              }
+                rotateY: 1200,
+              },
             },
             links: {
               enable: true,

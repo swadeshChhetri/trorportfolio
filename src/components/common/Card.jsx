@@ -14,9 +14,7 @@ export default function UniversalCard({
 }) {
   return (
     <Motion height="h-auto">
-      {/* Card Content */}
       <div className="relative z-10">
-        {/* Icon ID */}
         {id && color && (
           <div
             className={`${color} text-black font-bold w-12 h-12 flex items-center justify-center rounded-md mb-4`}
@@ -25,10 +23,8 @@ export default function UniversalCard({
           </div>
         )}
 
-        {/* Tag */}
         {tag && <p className="text-green-400 font-jetbrains mb-3">{tag}</p>}
 
-        {/* Title / Heading */}
         {title && (
           <h3 className="text-xl font-bold mb-3 text-white">{title}</h3>
         )}
@@ -36,7 +32,6 @@ export default function UniversalCard({
           <h2 className="text-2xl font-bold mb-3 text-white">{heading}</h2>
         )}
 
-        {/* Description */}
         {desc && <p className="text-gray-400 mb-4">{desc}</p>}
         {description && (
           <p className="text-gray-300 text-sm leading-relaxed mb-6">
@@ -44,7 +39,6 @@ export default function UniversalCard({
           </p>
         )}
 
-        {/* Stats Section */}
         {stats && (
           <div className="grid grid-cols-3 gap-4 mb-6">
             {stats.map((stat, index) => (
@@ -55,8 +49,7 @@ export default function UniversalCard({
             ))}
           </div>
         )}
-        
-        {/* Status or Classification */}
+
         {status && (
           <p className="text-green-400 font-jetbrains text-sm">{status}</p>
         )}

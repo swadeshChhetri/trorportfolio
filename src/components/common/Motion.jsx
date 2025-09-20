@@ -1,13 +1,12 @@
-import { motion } from 'framer-motion'
-import React from 'react'
-
+import { motion } from "framer-motion";
+import React from "react";
 
 const shineVariants = {
   initial: { x: "-200%" },
   hover: { x: "200%" },
 };
 
-const Motion = ({children, height = "h-[255px]"}) => {
+const Motion = ({ children, height = "h-[255px]" }) => {
   return (
     <motion.div
       initial="initial"
@@ -26,9 +25,9 @@ const Motion = ({children, height = "h-[255px]"}) => {
                    bg-gradient-to-r from-transparent via-green-400/40 to-transparent"
         aria-hidden="true"
       />
-       <div className="relative z-10">{children}</div>
-      </motion.div>
-  )
-}
+      <div className="relative z-10">{children}</div>
+    </motion.div>
+  );
+};
 
 export default Motion;

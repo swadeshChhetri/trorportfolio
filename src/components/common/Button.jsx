@@ -2,7 +2,12 @@
 import { motion } from "framer-motion";
 import clsx from "clsx";
 
-export default function Button({ children, variant = "normal", className = "", ...props }) {
+export default function Button({
+  children,
+  variant = "normal",
+  className = "",
+  ...props
+}) {
   if (variant === "animated") {
     return (
       <motion.button

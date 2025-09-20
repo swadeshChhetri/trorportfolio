@@ -1,7 +1,17 @@
 import React from "react";
 
-const services = ["AI Strategy", "Neural Networks", "Quantum Analytics", "Consciousness Training"];
-const system = ["Entity Profile", "Neural Link", "Career Nodes", "Privacy Protocol"];
+const services = [
+  "AI Strategy",
+  "Neural Networks",
+  "Quantum Analytics",
+  "Consciousness Training",
+];
+const system = [
+  "Entity Profile",
+  "Neural Link",
+  "Career Nodes",
+  "Privacy Protocol",
+];
 const links = ["[NEURAL_NET]", "[QUANTUM_LINK]"];
 
 export default function Footer() {
@@ -12,13 +22,18 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
         {/* Left Section */}
         <div>
-          <h2 className="text-2xl font-bold text-green-400 font-jetbrains">TROR.AI</h2>
+          <h2 className="text-2xl font-bold text-green-400 font-jetbrains">
+            TROR.AI
+          </h2>
           <p className="text-gray-400 mt-2 font-jetbrains text-sm leading-relaxed">
-            Architecting digital consciousness across the United States. Where AI meets human ambition.
+            Architecting digital consciousness across the United States. Where
+            AI meets human ambition.
           </p>
           <div className="mt-4 flex space-x-6 font-jetbrains text-gray-300">
             {links.map((link, idx) => (
-              <a key={idx} href="#" className="hover:text-green-400">{link}</a>
+              <a key={idx} href="#" className="hover:text-green-400">
+                {link}
+              </a>
             ))}
           </div>
         </div>
