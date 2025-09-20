@@ -28,6 +28,17 @@ export default function FAQSection() {
   };
 
   return (
+    <section id="services" className="bg-black text-white flex flex-col">
+    <div className="text-center">
+      {/* Section Heading */}
+      <h3 className="text-green-400 font-jetbrains mb-2">
+        [KNOWLEDGE_BASE]
+      </h3>
+      <h2 className="text-4xl font-bold mb-4">Frequently Asked Queries</h2>
+      <p className="text-gray-400 mb-12">
+        Common questions about AI consciousness implementation and neural network deployment
+      </p>
+    </div>
     <div id="faq" className="w-full max-w-3xl mx-auto mt-12 space-y-4">
       {faqs.map((faq, index) => (
         <div
@@ -66,5 +77,6 @@ export default function FAQSection() {
         </div>
       ))}
     </div>
+    </section>
   );
 }

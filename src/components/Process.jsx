@@ -38,6 +38,17 @@ const steps = [
 
 const StepsSection = () => {
   return (
+    <section id="services" className="bg-black text-white flex flex-col">
+    <div className="text-center">
+      {/* Section Heading */}
+      <h3 className="text-green-400 font-jetbrains mb-2">
+        [DEPLOYMENT_PROTOCOL]
+      </h3>
+      <h2 className="text-4xl font-bold mb-4">Neural Implementation Process</h2>
+      <p className="text-gray-400 mb-12">
+       Our systematic approach to architecting and deploying AI consciousness
+      </p>
+    </div>
     <div id="process" className="flex flex-col items-center md:flex-row gap-8 justify-center bg-black text-white">
       {steps.map((step) => (
         <StepCard
@@ -50,6 +61,7 @@ const StepsSection = () => {
         />
       ))}
     </div>
+    </section>
   );
 };
 

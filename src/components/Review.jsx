@@ -40,6 +40,17 @@ export default function TestimonialSlider() {
   }, []);
 
   return (
+    <section id="services" className="bg-black text-white flex flex-col">
+    <div className="text-center">
+      {/* Section Heading */}
+      <h3 className="text-green-400 font-jetbrains mb-2">
+        [CLIENT_FEEDBACK_MATRIX]
+      </h3>
+      <h2 className="text-4xl font-bold mb-4">Neural Network Reviews</h2>
+      <p className="text-gray-400 mb-12">
+        Testimonials from organizations that have successfully integrated AI consciousness
+      </p>
+    </div>
     <div id="reviews" className="bg-[#0c0f16] text-white rounded-2xl p-8 border border-green-900/40 shadow-lg w-full max-w-4xl mx-auto mt-12">
       <AnimatePresence mode="wait">
         <motion.div
@@ -74,5 +85,6 @@ export default function TestimonialSlider() {
         </motion.div>
       </AnimatePresence>
     </div>
+    </section>
   );
 }
