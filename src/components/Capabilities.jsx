@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import React from "react";
+import Motion from "./common/Motion";
 
 const stats = [
   { value: "247+", label: "Neural Networks Deployed" },
@@ -51,33 +52,19 @@ const Capabilities = () => (
         {/* Stats */}
         <div className="grid grid-cols-2 gap-6">
           {stats.map((stat, idx) => (
-            <div
+            <Motion
               key={idx}
               className="bg-[#0c0f16] border border-green-900/40 rounded-xl p-6 text-center"
             >
               <p className="text-3xl font-bold text-green-400">{stat.value}</p>
               <p className="text-gray-400 text-sm mt-2">{stat.label}</p>
-            </div>
+            </Motion>
           ))}
         </div>
       </div>
 
       {/* Right Content */}
-      <motion.div
-        initial="initial"
-        whileHover="hover"
-        variants={{ initial: { y: 0 }, hover: { y: -10 } }}
-        transition={{ type: "spring", stiffness: 200, damping: 15 }}
-        className="relative overflow-hidden bg-[#0c0f16] border border-green-900/40 rounded-2xl p-8"
-      >
-        <motion.div
-          variants={shineVariants}
-          transition={{ duration: 0.8, ease: "easeInOut" }}
-          className="absolute inset-0 w-[150%] h-full pointer-events-none z-0 
-                   bg-gradient-to-r from-transparent via-green-400/40 to-transparent"
-          aria-hidden="true"
-        />
-
+      <Motion>
         <h3 className="text-green-400 text-sm font-jetbrains mb-6">
           [CORE_PROTOCOLS]
         </h3>
@@ -93,7 +80,7 @@ const Capabilities = () => (
             </li>
           ))}
         </ul>
-      </motion.div>
+      </Motion>
     </div>
   </section>
 );

@@ -8,18 +8,15 @@ import TestimonialSlider from "./components/Review";
 import FAQSection from "./components/FAQ";
 import ContactForm from "./components/Contact";
 import Footer from "./components/Footer";
-import Cursor from "./components/common/Cursor";
 import ProjectTimeline from "./components/ProgressBar";
 import Capabilities from "./components/Capabilities";
 import Agents from "./components/Agents";
 import CoreCapabilities from "./components/CoreCapabilities";
-import ParticleBackground from "./components/common/ParticleBackground";
 
 function App() {
   return (
-    <div className="font-grotesk bg-black min-h-screen text-white  relative">
-      <ParticleBackground/>
-      <div className="relative z-10 px-6 md:px-8">
+    <div className="font-grotesk bg-black min-h-screen text-white">
+      <div className="px-6 py-24 md:px-8 md:py-4">
         <Navbar />
         <HeroComplex />
         <Services />

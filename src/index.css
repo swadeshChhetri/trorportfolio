@@ -12,7 +12,15 @@
   font-family: "JetBrains Mono", monospace;
 }
 
-.brain-detailed-svg .fold-lines {
+#tsparticles canvas {
+  position: absolute !important;
+  inset: 0 !important;
+  pointer-events: none !important;
+  width: 100% !important;
+  height: 100% !important;
+}
+
+/* .brain-detailed-svg .fold-lines {
   stroke-dasharray: 4000;
   stroke-dashoffset: 4000;
   animation: drawFolds 4s ease forwards, glowFolds 3s infinite alternate;
@@ -33,4 +41,4 @@
     filter: drop-shadow(0 0 20px #3b82f6);
     stroke-opacity: 1;
   }
-}
+} */
