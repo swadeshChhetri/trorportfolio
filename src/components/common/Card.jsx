@@ -13,7 +13,7 @@ export default function UniversalCard({
   classification,
 }) {
   return (
-    <Motion>
+    <Motion height="h-auto">
       {/* Card Content */}
       <div className="relative z-10">
         {/* Icon ID */}

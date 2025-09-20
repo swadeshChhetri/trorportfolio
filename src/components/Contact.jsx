@@ -10,7 +10,7 @@ export default function ContactForm() {
     >
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6 w-full">
         {/* Left: Form */}
-        <Motion>
+        <Motion height="min-h-[600px]">
           <div className="rounded-lg p-6 space-y-6">
             <h2 className="text-green-400 font-jetbrains text-lg mb-4">
               [TRANSMISSION_PROTOCOL]
@@ -62,7 +62,7 @@ export default function ContactForm() {
         {/* Right: Cards */}
         <div className="flex flex-col space-y-6">
           {/* Card 1 */}
-          <Motion className="rounded-lg p-6 bg-black/80">
+          <Motion height="min-h-[300px]">
             <h2 className="text-green-400 font-jetbrains mb-4">
               [CONNECTION_NODES]
             </h2>

@@ -17,7 +17,7 @@ const StepCard = ({ number, color, title, description, duration }) => {
       className="flex flex-col items-center text-center max-w-xs cursor-pointer"
     >
       {/* Animated Number Circle */}
-      <Motion>
+      <Motion height="h-auto">
         <div
           className={`w-20 h-20 flex items-center justify-center rounded-full border-2 ${color} text-2xl font-bold mb-4 leading-none mx-auto`}
         >

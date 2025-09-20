@@ -6,7 +6,7 @@ export default function Hero() {
   return (
     <section
       id="home"
-      className="relative min-h-screen flex flex-col md:flex-row items-center justify-between bg-gradient-to-r from-black to-gray-900 text-white px-4 sm:px-6 md:px-8 overflow-hidden"
+      className="relative min-h-screen flex flex-col md:flex-row items-center justify-between text-white px-4 sm:px-6 md:px-8 overflow-hidden"
       style={{ isolation: "isolate" }}
     >
       {/* Text Section */}

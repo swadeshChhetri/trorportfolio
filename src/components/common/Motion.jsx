@@ -7,22 +7,22 @@ const shineVariants = {
   hover: { x: "200%" },
 };
 
-const Motion = ({children}) => {
+const Motion = ({children, height = "h-[255px]"}) => {
   return (
     <motion.div
       initial="initial"
       whileHover="hover"
       variants={{ initial: { y: 0 }, hover: { y: -10 } }}
       transition={{ type: "spring", stiffness: 200, damping: 15 }}
-      className="relative group bg-gradient-to-b from-gray-900 to-black 
+      className={`relative w-full ${height} group bg-gradient-to-b from-gray-900 to-black 
                  p-6 rounded-xl border border-gray-700 
-                 overflow-hidden cursor-pointer"
+                 overflow-hidden cursor-pointer`}
     >
       {/* Shiny Swipe Effect */}
       <motion.div
         variants={shineVariants}
         transition={{ duration: 0.8, ease: "easeInOut" }}
-        className="absolute inset-0 w-[150%] h-full pointer-events-none z-0 
+        className="absolute inset-0 pointer-events-none z-0 
                    bg-gradient-to-r from-transparent via-green-400/40 to-transparent"
         aria-hidden="true"
       />

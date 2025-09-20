@@ -54,7 +54,7 @@ const Capabilities = () => (
           {stats.map((stat, idx) => (
             <Motion
               key={idx}
-              className="bg-[#0c0f16] border border-green-900/40 rounded-xl p-6 text-center"
+              height="h-auto"
             >
               <p className="text-3xl font-bold text-green-400">{stat.value}</p>
               <p className="text-gray-400 text-sm mt-2">{stat.label}</p>
@@ -64,7 +64,7 @@ const Capabilities = () => (
       </div>
 
       {/* Right Content */}
-      <Motion>
+      <Motion height="h-auto">
         <h3 className="text-green-400 text-sm font-jetbrains mb-6">
           [CORE_PROTOCOLS]
         </h3>
