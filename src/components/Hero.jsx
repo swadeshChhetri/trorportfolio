@@ -66,7 +66,7 @@ export default function Hero() {
 
       {/* Image Section */}
       <motion.div
-        className="relative md:flex justify-center md:justify-end items-center w-full md:w-1/2 mt-10 md:mt-0 hidden "
+        className="hidden relative  md:flex justify-center md:justify-end items-center w-full md:w-1/2 mt-10 md:mt-0  "
         animate={{ y: [0, -20, 0] }}
         transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
       >
@@ -90,7 +90,7 @@ export default function Hero() {
       </motion.div>
 
       {/* Bottom Stats */}
-      <div className="absolute bottom-6 left-0 w-full flex flex-wrap justify-center md:justify-start gap-6 text-gray-400 font-jetbrains text-xs sm:text-sm px-4 sm:px-6 md:px-8">
+      <div className="hidden absolute bottom-6 left-0 w-full flex flex-wrap justify-center md:justify-start gap-6 text-gray-400 font-jetbrains text-xs sm:text-sm px-4 sm:px-6 md:px-8">
         {[
           { value: "92%", label: "Process Efficiency" },
           { value: "10x", label: "Faster Decisions" },

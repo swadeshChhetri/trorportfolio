@@ -43,7 +43,7 @@ export default function Services() {
   return (
     <section
       id="services"
-      className="bg-black text-white py-20 flex flex-col items-center"
+      className="bg-black text-white flex flex-col items-center"
     >
       {/* Section Heading */}
       <h3 className="text-green-400 font-jetbrains mb-2">

@@ -6,7 +6,7 @@ export default function ContactForm() {
   return (
     <div
       id="contact"
-      className="min-h-screen bg-black flex items-center justify-center py-6"
+      className="min-h-screen bg-black flex items-center justify-center"
     >
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6 w-full">
         {/* Left: Form */}

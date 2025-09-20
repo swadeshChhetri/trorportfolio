@@ -8,7 +8,7 @@ export default function Footer() {
   const sectionTitleClass = "text-green-400 font-jetbrains mb-3";
 
   return (
-    <footer className="bg-black text-green-400 border-t border-green-600 py-10">
+    <footer className="bg-black text-green-400 border-t border-green-600">
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
         {/* Left Section */}
         <div>

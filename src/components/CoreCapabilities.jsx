@@ -35,7 +35,7 @@ const capabilities = [
 
 const CoreCapabilities = () => {
   return (
-    <section className="bg-black py-20">
+    <section className="bg-black">
       <div className="mx-auto max-w-7xl px-6">
         {/* Heading */}
         <p className="text-green-400 font-jetbrains mb-10 text-center">

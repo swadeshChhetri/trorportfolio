@@ -5,7 +5,7 @@ export default function Products() {
   return (
     <section
       id="products"
-      className="bg-black text-white min-h-screen flex flex-col md:flex-row items-center md:items-start justify-center md:justify-between py-20 px-4 sm:px-6 md:px-8"
+      className="bg-black text-white min-h-screen flex flex-col md:flex-row items-center md:items-start justify-center md:justify-between px-4 sm:px-6 md:px-8"
     >
       {/* LEFT SIDE */}
       <div className="max-w-xl flex-1">

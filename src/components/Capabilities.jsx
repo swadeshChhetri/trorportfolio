@@ -31,7 +31,7 @@ const protocols = [
 ];
 
 const Capabilities = () => (
-  <section className="w-full bg-black text-white py-20">
+  <section className="w-full bg-black text-white">
     <div className="mx-auto grid md:grid-cols-2 gap-12 items-center">
       {/* Left Content */}
       <div>

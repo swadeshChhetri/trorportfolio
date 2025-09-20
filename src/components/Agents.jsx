@@ -49,7 +49,7 @@ const agents = [
 
 const Agents = () => {
   return (
-    <section className="bg-black py-20">
+    <section className="bg-black">
     <div className="mx-auto grid md:grid-cols-3 gap-8">
       {agents.map((agent, index) => (
         <Card
