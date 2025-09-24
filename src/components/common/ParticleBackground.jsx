@@ -3,7 +3,7 @@ import Particles, { initParticlesEngine } from "@tsparticles/react";
 import { loadSlim } from "@tsparticles/slim";
 
 const ParticleBackground = () => {
-  const [particleCount, setParticleCount] = useState(100);
+  const [particleCount, setParticleCount] = useState(200);
   const [init, setInit] = useState(false);
   const particlesRef = useRef(null);
 

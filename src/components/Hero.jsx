@@ -66,7 +66,7 @@ export default function Hero() {
 
       {/* Image Section */}
       <motion.div
-        className="hidden relative  md:flex justify-center md:justify-end items-center w-full md:w-1/2 mt-10 md:mt-0  "
+        className="hidden relative md:flex justify-center md:justify-end items-center w-full md:w-1/2 mt-10 md:mt-0 h-[450px]" // add height
         animate={{ y: [0, -20, 0] }}
         transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
       >
@@ -77,15 +77,6 @@ export default function Hero() {
         {/* Glow */}
         <div className="absolute inset-0 flex justify-center items-center">
           <div className="w-[220px] sm:w-[320px] md:w-[520px] h-[220px] sm:h-[320px] md:h-[520px] rounded-full bg-green-500/20 blur-[100px]" />
-        </div>
-
-        {/* Circle Image */}
-        <div className="relative w-[200px] sm:w-[320px] md:w-[450px] h-[200px] sm:h-[320px] md:h-[450px] rounded-full overflow-hidden shadow-[0_0_40px_#22c55e]">
-          <img
-            src="/AI.png"
-            alt="AI Illustration"
-            className="w-full h-full object-cover"
-          />
         </div>
       </motion.div>
 
